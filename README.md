@@ -1,2 +1,3 @@
-# ud036_StarterCode
-Source code for a Movie Trailer website.
+# nanodegree-fswd-projeto1.
+
+Código fonte do projeto de trailer de filme.
