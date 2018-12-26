@@ -1,18 +1,22 @@
-import movie
+import movies
 import movie_trailer
 
-soad = movie.Movie("System Of a Down", "Uma ótima banda de rock", "https://i.pinimg.com/originals/0b/5d/c5/0b5dc5ad4c3eae272f36d3d87a91ba27.jpg", "https://www.youtube.com/watch?v=DnGdoEa1tPg")
 
-raimundos = movie.Movie("Raimundos", "Banda brasileira de Rock", "http://radiocidade.uvv.br/wp-content/uploads/2018/12/47065835_318784618942283_1055781610797924352_n.png","https://www.youtube.com/watch?v=7ICZrd5b75g")
+# Objeto que tem os parametros que serão passados para a class Movie
+movie1 = movies.Movie("VINGADORES: ULTIMATO", "Após Thanos eliminar metade das criaturas vivas, os Vingadores precisam lidar com a dor da perda de amigos e seus entes queridos. Com Tony Stark (Robert Downey Jr.) vagando perdido no espaço sem água nem comida, Steve Rogers (Chris Evans) e Natasha Romanov (Scarlett Johansson) precisam liderar a resistência contra o titã louco.", "https://bit.ly/2BDK67m", "https://www.youtube.com/watch?v=g6ng8iy-l0U", "25/04/2019")
 
-megadeth = movie.Movie("Megadeth", "Banda mundialmente conhecida de Rock", "https://f4.bcbits.com/img/a0298531282_10.jpg","https://www.youtube.com/watch?v=aU-dKoFZT0A")
+movie2 = movies.Movie("ERA UMA VEZ UM DEADPOOL", "Determinado a provar que Deadpool 2 é um filme para toda a família, Wade Wilson limpa todos os palavrões e sangue da narrativa e sequestra o ator e diretor Fred Savage para reencenar A Princesa Prometida. Savage é obrigado a ouvir o 'conto de fadas' do Mercenário Tagarela, incluindo sua luta com Cable e a formação da X-Force.", "https://bit.ly/2V8Q5Ka", "https://www.youtube.com/watch?v=_SiPmxKk7pI", "27/12/2018")
 
-a7x = movie.Movie("Avenged Sevenfold", "Banda americana de Rock", "https://j.b5z.net/i/u/6127364/i/avegened_sevenfold_32_ezr2__1_.jpg","https://www.youtube.com/watch?v=cU1Uav0T8S4")
+movie3 = movies.Movie("DRAGON BALL SUPER BROLY", "Apesar da Terra estar em um período de calmaria, Goku se recusa a parar de treinar constantemente - ele quer estar pronto para quando uma nova ameaça surgir. O que ele não imaginava era que seu novo inimigo seria Broly, um poderoso super saiyajin sedento por vingança, que deseja destruir todos que encontrar pela frente.", "https://bit.ly/2Vbhmvt", "https://www.youtube.com/watch?v=_K91eeP25NA", "03/01/2019")
 
-angra = movie.Movie("Angra", "Uma banda brasileira de Heavy Metal ", "https://dpz4c7q921os3.cloudfront.net/images/events/13254/f00a24c18f19dad9007dbca7ca2b4e47.jpg", "https://www.youtube.com/watch?v=TXHmgHP6GkQ")
+movie4 = movies.Movie("O REI LEÃO", "Simba (Donald Glover) é um jovem leão cujo destino é se tornar o rei da selva. Tudo corre bem, até que uma grande tragédia atinge sua vida mudando sua trajetória para sempre. A sinopse oficial ainda não foi divulgada.", "https://bit.ly/2GSnPsv", "https://www.youtube.com/watch?v=J57HnR6FPW0", "18/07/2019")
 
-metallica = movie.Movie("Metallica", "Uma das melhores bandas de heavy metal", "https://images-na.ssl-images-amazon.com/images/I/41w3DUSNUpL._SL500_AC_SS350_.jpg", "https://www.youtube.com/watch?v=zPpKCrIjaiw")
+movie5 = movies.Movie("CREED II", "Adonis Creed (Michael B. Jordan) saiu mais forte do que nunca de sua luta contra 'Pretty' Ricky Conlan (Tony Bellew), e segue sua trajetória rumo ao campeonato mundial de boxe, contra toda a desconfiança que acompanha a sombra de seu pai e com o apoio de Rocky (Sylvester Stallone). Sua próxima luta não será tão simples, ele precisa enfrentar um adversário que possui uma forte ligação com o passado de sua família, o que torna tudo ainda mais complexo.", "https://bit.ly/2ENMyv1", "https://www.youtube.com/watch?v=HKXoW8FISj4", "27/11/2018")
 
-movies = [soad, raimundos, megadeth, a7x, angra, metallica]
+movie6 = movies.Movie("CULPA", "O policial Asger Holm (Jakob Cedergren) está acostumado a trabalhar nas ruas de Copenhaguem, mas devido a um conflito ético no trabalho, é confinado à mesa de emergências. Encarregado de receber ligações e transmitir às delegacias responsáveis, ele é surpreendido pela chamada de uma mulher desesperada, tentando comunicar o seu sequestro sem chamar a atenção do sequestrador. Infelizmente, ela precisa desligar antes de ser descoberta, de modo que Asger dispõe de poucas informações para encontrá-la. Começa a corrida contra o relógio para descobrir onde ela está, para mobilizar os policiais mais próximos e salvar a vítima antes que uma tragédia aconteça.", "https://bit.ly/2ENE2wn", "https://www.youtube.com/watch?v=LxHgMEZY3VM", "27/12/2018")
 
-movie_trailer.open_movies_page(movies)
+# array com as instancias e seus dados
+movie = [movie1, movie2, movie3, movie4, movie5, movie6]
+
+# Chamada do método open_movies_page, responsável por passar os parametos ao código que gera o html e abre o browser.
+movie_trailer.open_movies_page(movie)
